@@ -17,25 +17,5 @@ class HeaderCollectionReusableView: UICollectionReusableView {
     @IBOutlet weak var headerViewLabel: UILabel!
 }
 
-extension HeaderCollectionReusableView: UICollectionViewDataSource {
-    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        
-    }
-    
-    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        <#code#>
-    }
-    
-    
-    func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
-        switch kind {
-            
-        case UICollectionView.elementKindSectionHeader:
-            guard case let collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: "headerView", for: indexPath) is HeaderCollectionReusableView else { fatalError("Invalid view type")
-            }
-            
-         
-            
-        }
-    }
-}
+//extension HeaderCollectionReusableView: UICollectionViewDataSource {
+//}

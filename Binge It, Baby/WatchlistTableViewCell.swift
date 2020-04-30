@@ -13,7 +13,23 @@ class WatchlistTableViewCell: UITableViewCell {
     // Outlets
     @IBOutlet weak var movieTitleLabel: UILabel!
     @IBOutlet weak var movieImage: UIImageView!
+    @IBOutlet weak var cellView: UIView!
+    @IBOutlet weak var watchMovieButton: UIButton!
     
+    
+    
+    
+    
+    
+    
+//    func updateCell() {
+//    cellView.backgroundColor = .clear
+//    cellView.layer.cornerRadius = 10
+//    cellView.layer.borderColor = UIColor.black.cgColor
+//    cellView.layer.masksToBounds = true
+//    
+//    }
+//
     
     // Instance of a Movie
     var movie: Movie? {

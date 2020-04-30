@@ -9,35 +9,21 @@
 import UIKit
 
 class TabBarViewController: UITabBarController {
-//    
-//    let homePageController = HomePageController()
-//    
-//    func tabBarViewControllers() {
-//        
-//        let tabViewControllers = tabBarController?.viewControllers
-//        
-//        guard let homePageVC = tabViewControllers?[0] as? HomePageCollectionViewController else { return }
-//        
-//        homePageVC.homePageController = self.homePageController
-//    }
-
+    
+    let homePageController = HomePageController()
+    
+    func tabBarViewControllers() {
+        
+        guard let tabViewControllers = self.viewControllers,
+            let homePageVC = tabViewControllers[0] as? HomePageCollectionViewController,
+            let watchListVC = tabViewControllers[2] as? WatchlistViewController else { return }
+        homePageVC.homePageController = self.homePageController
+        watchListVC.homePageController = self.homePageController
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
-//        tabBarViewControllers()
-
-        // Do any additional setup after loading the view.
+        tabBarViewControllers()
     }
-
-    
     // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if let homePageVC = segue.destination as? HomePageCollectionViewController {
-            print("Going To HomePageVC")
-        }
-
-    }
     
-
 }

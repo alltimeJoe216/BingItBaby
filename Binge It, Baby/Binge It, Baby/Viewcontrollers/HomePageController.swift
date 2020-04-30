@@ -15,11 +15,10 @@ protocol MovieDetailDelegate {
     func movieWasSelected(_ movie: Movie)
 }
 
-struct HomePageController {
+class HomePageController {
 
     public var movieList: [Movie] = [
-        
-        
+
         Movie(name: "Frozen", genre: "Animated", releasedYear: 2013, rating: "4.5", cast: ["Kristen Bell", "Idina Menzel", "Johnathan Groff"], userIsWatching: false, image: #imageLiteral(resourceName: "Frozen"), synopsis: "Fearless optimist Anna teams up with rugged mountain man Kristoff and his loyal reindeer Sven and sets off on an epic journey to find her sister Elsa, whose icy powers have trapped the kingdom of Arendelle in eternal winter. Encountering Everest-like conditions, mystical trolls and a hilarious snowman named Olaf, Anna and Kristoff battle the elements in a race to save the kingdom. From the outside Elsa looks poised, regal and reserved, but in reality she lives in fear as she wrestles with a mighty secret: she was born with the power to create ice and snow. It's a beautiful ability, but also extremely dangerous. Haunted by the moment her magic nearly killed her younger sister Anna, Elsa has isolated herself, spending every waking minute trying to suppress her growing powers. Her mounting emotions trigger the magic, accidentally setting off an eternal winter that she can't stop. She fears she's becoming a monster and that no one, not even her sister, can help her."),
         
         Movie(name: "Superbad", genre: "Comedy", releasedYear: 2007, rating: "4.3", cast: ["Jonah Hill", "Micheal Cera", "Seth Rogen", "Christopher Mintz-Plasse"], userIsWatching: false, image: #imageLiteral(resourceName: "SuperBad"), synopsis: "Seth and Evan are best friends, inseparable, navigating the last weeks of high school. Usually shunned by the popular kids, Seth and Evan luck into an invitation to a party, and spend a long day, with the help of their nerdy friend Fogell, trying to score enough alcohol to lubricate the party and inebriate two girls, Jules and Becca, so they can kick-start their sex lives and go off to college with a summer full of experience and new skills. Their quest is complicated by Fogell's falling in with two inept cops who both slow and assist the plan. If they do get the liquor to the party, what then? Is sex the only rite of passage at hand?"),
@@ -33,19 +32,16 @@ struct HomePageController {
         Movie(name: "Saving Private Ryan", genre: "Drama", releasedYear: 1998, rating: "5.0", cast: ["Tom Hanks", "Matt Damon", "Tom Sizemore"], userIsWatching: true, image: #imageLiteral(resourceName: "SavingPrivateRyan"), synopsis: "Opening with the Allied invasion of Normandy on 6 June 1944, members of the 2nd Ranger Battalion under Cpt. Miller fight ashore to secure a beachhead. Amidst the fighting, two brothers are killed in action. Earlier in New Guinea, a third brother is KIA. Their mother, Mrs. Ryan, is to receive all three of the grave telegrams on the same day. The United States Army Chief of Staff, George C. Marshall, is given an opportunity to alleviate some of her grief when he learns of a fourth brother, Private James Ryan, and decides to send out 8 men (Cpt. Miller and select members from 2nd Rangers) to find him and bring him back home to his mother.")
     ]
 
-    var moviesOnMyList: [Movie] {
-        
-        var moviesOnListArray: [Movie] = []
-        
-        for movie in movieList {
-            if movie.userIsWatching == true {
-                moviesOnListArray.append(movie)
-            }
-        }
-        return moviesOnListArray
-    }
+    
+    
+    var movieAddedList: [Movie] = []
+    
     
 
+    
+    
+    
+    
 //    //Basic Persistence
 //
 //    var movieListURL: URL? {

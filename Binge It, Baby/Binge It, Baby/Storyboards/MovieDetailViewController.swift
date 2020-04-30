@@ -21,9 +21,9 @@ class MovieDetailViewController: UIViewController {
             }
         }
     }
-    let homePageController = HomePageController()
-    var delegate: MovieDetailDelegate?
-    var delegate2: AddMovieToWatchList?
+//    let homePageController = HomePageController()
+    var delegate: AddMovieToWatchList?
+//    var delegate2: AddMovieToWatchList?
     
     @IBOutlet weak var behindImageView: UIView!
     @IBOutlet weak var movieDetailName: UILabel!
@@ -54,11 +54,8 @@ class MovieDetailViewController: UIViewController {
         movieStatus = true
         
         let addedMovie = Movie(name: movieName, image: movieImage, userIsWatching: movieStatus)
-        delegate2?.movieWasAdded(addedMovie)
-        
+        delegate?.movieWasAdded(addedMovie)
         showAlert()
-        
-        
     }
     
     private func updateViews() {
@@ -78,8 +75,8 @@ class MovieDetailViewController: UIViewController {
     
     private func showAlert() {
         let alert = UIAlertController(title: "Your movie was added!", message: "Tap 'Ok' to continue", preferredStyle: .alert)
-        alert.addAction(UIAlertAction(title: "Ok", style: .default, handler: nil))
+        alert.addAction(UIAlertAction(title: "Ok", style: .default) { (UIAlertAction) -> Void in
+            self.dismiss(animated: true, completion: nil)})
         present(alert, animated: true)
-        dismiss(animated: true, completion: nil)
     }
 }
