@@ -1,0 +1,431 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8E17878924565DB600357DC9 /* HomePageCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E17878824565DB600357DC9 /* HomePageCollectionViewController.swift */; };
+		8E17878B24565F1500357DC9 /* HomePageCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E17878A24565F1500357DC9 /* HomePageCollectionViewCell.swift */; };
+		8E17878D2456705F00357DC9 /* HomePageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E17878C2456705F00357DC9 /* HomePageController.swift */; };
+		8E23658A2459DDE90032F9EF /* WatchlistViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E2365892459DDE90032F9EF /* WatchlistViewController.swift */; };
+		8E23658E2459E7300032F9EF /* WatchlistTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E23658D2459E7300032F9EF /* WatchlistTableViewCell.swift */; };
+		8E661A0424589A6B00A04EA4 /* UserSettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E661A0324589A6B00A04EA4 /* UserSettingsViewController.swift */; };
+		8E885E322453CBD20026936D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E885E312453CBD20026936D /* AppDelegate.swift */; };
+		8E885E342453CBD20026936D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E885E332453CBD20026936D /* SceneDelegate.swift */; };
+		8E885E392453CBD20026936D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8E885E372453CBD20026936D /* Main.storyboard */; };
+		8E885E3B2453CBD70026936D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8E885E3A2453CBD70026936D /* Assets.xcassets */; };
+		8E885E3E2453CBD80026936D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8E885E3C2453CBD80026936D /* LaunchScreen.storyboard */; };
+		8E885E4C2453CCFF0026936D /* MovieShowModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E885E4B2453CCFF0026936D /* MovieShowModel.swift */; };
+		8EC1E0C1245A4DCA00FCEE9D /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EC1E0C0245A4DCA00FCEE9D /* TabBarViewController.swift */; };
+		8EC1E0C3245B190900FCEE9D /* HeaderCollectionReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EC1E0C2245B190900FCEE9D /* HeaderCollectionReusableView.swift */; };
+		8EE7743B24577F71006CF0B0 /* MovieDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EE7743A24577F71006CF0B0 /* MovieDetailViewController.swift */; };
+		8EE7743D24578057006CF0B0 /* SettingsKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EE7743C24578057006CF0B0 /* SettingsKeys.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		8E17878824565DB600357DC9 /* HomePageCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = HomePageCollectionViewController.swift; path = "Binge It, Baby/Storyboards/HomePageCollectionViewController.swift"; sourceTree = SOURCE_ROOT; };
+		8E17878A24565F1500357DC9 /* HomePageCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = HomePageCollectionViewCell.swift; path = "Binge It, Baby/Views/HomePageCollectionViewCell.swift"; sourceTree = SOURCE_ROOT; };
+		8E17878C2456705F00357DC9 /* HomePageController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = HomePageController.swift; path = "Binge It, Baby/Viewcontrollers/HomePageController.swift"; sourceTree = SOURCE_ROOT; };
+		8E2365892459DDE90032F9EF /* WatchlistViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchlistViewController.swift; sourceTree = SOURCE_ROOT; };
+		8E23658D2459E7300032F9EF /* WatchlistTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchlistTableViewCell.swift; sourceTree = SOURCE_ROOT; };
+		8E661A0324589A6B00A04EA4 /* UserSettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = UserSettingsViewController.swift; path = "Binge It, Baby/Storyboards/UserSettingsViewController.swift"; sourceTree = SOURCE_ROOT; };
+		8E885E2E2453CBD20026936D /* Binge It, Baby.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Binge It, Baby.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8E885E312453CBD20026936D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		8E885E332453CBD20026936D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		8E885E382453CBD20026936D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		8E885E3A2453CBD70026936D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8E885E3D2453CBD80026936D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		8E885E3F2453CBD80026936D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8E885E4B2453CCFF0026936D /* MovieShowModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieShowModel.swift; sourceTree = "<group>"; };
+		8EC1E0C0245A4DCA00FCEE9D /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = SOURCE_ROOT; };
+		8EC1E0C2245B190900FCEE9D /* HeaderCollectionReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = HeaderCollectionReusableView.swift; path = "Binge It, Baby/Storyboards/HeaderCollectionReusableView.swift"; sourceTree = SOURCE_ROOT; };
+		8EE7743A24577F71006CF0B0 /* MovieDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MovieDetailViewController.swift; path = "Binge It, Baby/Storyboards/MovieDetailViewController.swift"; sourceTree = SOURCE_ROOT; };
+		8EE7743C24578057006CF0B0 /* SettingsKeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SettingsKeys.swift; path = "Binge It, Baby/Resources/SettingsKeys.swift"; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8E885E2B2453CBD20026936D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8E885E252453CBD20026936D = {
+			isa = PBXGroup;
+			children = (
+				8E885E302453CBD20026936D /* Binge It, Baby */,
+				8E885E2F2453CBD20026936D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8E885E2F2453CBD20026936D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8E885E2E2453CBD20026936D /* Binge It, Baby.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8E885E302453CBD20026936D /* Binge It, Baby */ = {
+			isa = PBXGroup;
+			children = (
+				8E885E3F2453CBD80026936D /* Info.plist */,
+				8E885E452453CC0C0026936D /* Models */,
+				8E885E462453CC120026936D /* ModelControllers */,
+				8E885E472453CC1B0026936D /* Views */,
+				8E885E482453CC310026936D /* Viewcontrollers */,
+				8E885E492453CC380026936D /* Storyboards */,
+				8E885E4A2453CC3E0026936D /* Resources */,
+			);
+			path = "Binge It, Baby";
+			sourceTree = "<group>";
+		};
+		8E885E452453CC0C0026936D /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				8E885E4B2453CCFF0026936D /* MovieShowModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		8E885E462453CC120026936D /* ModelControllers */ = {
+			isa = PBXGroup;
+			children = (
+				8E17878C2456705F00357DC9 /* HomePageController.swift */,
+			);
+			path = ModelControllers;
+			sourceTree = "<group>";
+		};
+		8E885E472453CC1B0026936D /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				8EC1E0C2245B190900FCEE9D /* HeaderCollectionReusableView.swift */,
+				8E23658D2459E7300032F9EF /* WatchlistTableViewCell.swift */,
+				8E17878A24565F1500357DC9 /* HomePageCollectionViewCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		8E885E482453CC310026936D /* Viewcontrollers */ = {
+			isa = PBXGroup;
+			children = (
+				8EC1E0C0245A4DCA00FCEE9D /* TabBarViewController.swift */,
+				8E2365892459DDE90032F9EF /* WatchlistViewController.swift */,
+				8E661A0324589A6B00A04EA4 /* UserSettingsViewController.swift */,
+				8EE7743A24577F71006CF0B0 /* MovieDetailViewController.swift */,
+				8E17878824565DB600357DC9 /* HomePageCollectionViewController.swift */,
+			);
+			path = Viewcontrollers;
+			sourceTree = "<group>";
+		};
+		8E885E492453CC380026936D /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				8E885E372453CBD20026936D /* Main.storyboard */,
+				8E885E3C2453CBD80026936D /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		8E885E4A2453CC3E0026936D /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				8E885E3A2453CBD70026936D /* Assets.xcassets */,
+				8E885E332453CBD20026936D /* SceneDelegate.swift */,
+				8EE7743C24578057006CF0B0 /* SettingsKeys.swift */,
+				8E885E312453CBD20026936D /* AppDelegate.swift */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8E885E2D2453CBD20026936D /* Binge It, Baby */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8E885E422453CBD80026936D /* Build configuration list for PBXNativeTarget "Binge It, Baby" */;
+			buildPhases = (
+				8E885E2A2453CBD20026936D /* Sources */,
+				8E885E2B2453CBD20026936D /* Frameworks */,
+				8E885E2C2453CBD20026936D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Binge It, Baby";
+			productName = "Binge It, Baby";
+			productReference = 8E885E2E2453CBD20026936D /* Binge It, Baby.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8E885E262453CBD20026936D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1140;
+				LastUpgradeCheck = 1140;
+				ORGANIZATIONNAME = "Joe Veverka";
+				TargetAttributes = {
+					8E885E2D2453CBD20026936D = {
+						CreatedOnToolsVersion = 11.4.1;
+					};
+				};
+			};
+			buildConfigurationList = 8E885E292453CBD20026936D /* Build configuration list for PBXProject "Binge It, Baby" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8E885E252453CBD20026936D;
+			productRefGroup = 8E885E2F2453CBD20026936D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8E885E2D2453CBD20026936D /* Binge It, Baby */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8E885E2C2453CBD20026936D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8E885E3E2453CBD80026936D /* LaunchScreen.storyboard in Resources */,
+				8E885E3B2453CBD70026936D /* Assets.xcassets in Resources */,
+				8E885E392453CBD20026936D /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8E885E2A2453CBD20026936D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8E17878B24565F1500357DC9 /* HomePageCollectionViewCell.swift in Sources */,
+				8E23658E2459E7300032F9EF /* WatchlistTableViewCell.swift in Sources */,
+				8E17878D2456705F00357DC9 /* HomePageController.swift in Sources */,
+				8E885E322453CBD20026936D /* AppDelegate.swift in Sources */,
+				8EC1E0C1245A4DCA00FCEE9D /* TabBarViewController.swift in Sources */,
+				8EC1E0C3245B190900FCEE9D /* HeaderCollectionReusableView.swift in Sources */,
+				8E885E342453CBD20026936D /* SceneDelegate.swift in Sources */,
+				8E17878924565DB600357DC9 /* HomePageCollectionViewController.swift in Sources */,
+				8E23658A2459DDE90032F9EF /* WatchlistViewController.swift in Sources */,
+				8E661A0424589A6B00A04EA4 /* UserSettingsViewController.swift in Sources */,
+				8EE7743D24578057006CF0B0 /* SettingsKeys.swift in Sources */,
+				8E885E4C2453CCFF0026936D /* MovieShowModel.swift in Sources */,
+				8EE7743B24577F71006CF0B0 /* MovieDetailViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		8E885E372453CBD20026936D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8E885E382453CBD20026936D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		8E885E3C2453CBD80026936D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8E885E3D2453CBD80026936D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8E885E402453CBD80026936D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		8E885E412453CBD80026936D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8E885E432453CBD80026936D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ZLCFP6QUVG;
+				INFOPLIST_FILE = "Binge It, Baby/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.joeV.Binge-It--Baby";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8E885E442453CBD80026936D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ZLCFP6QUVG;
+				INFOPLIST_FILE = "Binge It, Baby/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.joeV.Binge-It--Baby";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8E885E292453CBD20026936D /* Build configuration list for PBXProject "Binge It, Baby" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8E885E402453CBD80026936D /* Debug */,
+				8E885E412453CBD80026936D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8E885E422453CBD80026936D /* Build configuration list for PBXNativeTarget "Binge It, Baby" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8E885E432453CBD80026936D /* Debug */,
+				8E885E442453CBD80026936D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8E885E262453CBD20026936D /* Project object */;
+}
