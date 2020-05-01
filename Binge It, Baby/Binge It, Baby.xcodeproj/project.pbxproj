@@ -31,8 +31,8 @@
 		8E17878824565DB600357DC9 /* HomePageCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = HomePageCollectionViewController.swift; path = "Binge It, Baby/Storyboards/HomePageCollectionViewController.swift"; sourceTree = SOURCE_ROOT; };
 		8E17878A24565F1500357DC9 /* HomePageCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = HomePageCollectionViewCell.swift; path = "Binge It, Baby/Views/HomePageCollectionViewCell.swift"; sourceTree = SOURCE_ROOT; };
 		8E17878C2456705F00357DC9 /* HomePageController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = HomePageController.swift; path = "Binge It, Baby/Viewcontrollers/HomePageController.swift"; sourceTree = SOURCE_ROOT; };
-		8E2365892459DDE90032F9EF /* WatchlistViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchlistViewController.swift; sourceTree = SOURCE_ROOT; };
-		8E23658D2459E7300032F9EF /* WatchlistTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchlistTableViewCell.swift; sourceTree = SOURCE_ROOT; };
+		8E2365892459DDE90032F9EF /* WatchlistViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = WatchlistViewController.swift; path = "Binge It, Baby/Viewcontrollers/New Group/WatchlistViewController.swift"; sourceTree = SOURCE_ROOT; };
+		8E23658D2459E7300032F9EF /* WatchlistTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = WatchlistTableViewCell.swift; path = "Binge It, Baby/Viewcontrollers/New Group/WatchlistTableViewCell.swift"; sourceTree = SOURCE_ROOT; };
 		8E661A0324589A6B00A04EA4 /* UserSettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = UserSettingsViewController.swift; path = "Binge It, Baby/Storyboards/UserSettingsViewController.swift"; sourceTree = SOURCE_ROOT; };
 		8E885E2E2453CBD20026936D /* Binge It, Baby.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Binge It, Baby.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8E885E312453CBD20026936D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -112,7 +112,6 @@
 			children = (
 				8EB366B3245BAF5D003709FD /* CarouselViewCell.swift */,
 				8EC1E0C2245B190900FCEE9D /* HeaderCollectionReusableView.swift */,
-				8E23658D2459E7300032F9EF /* WatchlistTableViewCell.swift */,
 				8E17878A24565F1500357DC9 /* HomePageCollectionViewCell.swift */,
 			);
 			path = Views;
@@ -121,9 +120,9 @@
 		8E885E482453CC310026936D /* Viewcontrollers */ = {
 			isa = PBXGroup;
 			children = (
+				8EB366B7245C5199003709FD /* New Group */,
 				8EB366B5245BB266003709FD /* CarouselViewController.swift */,
 				8EC1E0C0245A4DCA00FCEE9D /* TabBarViewController.swift */,
-				8E2365892459DDE90032F9EF /* WatchlistViewController.swift */,
 				8E661A0324589A6B00A04EA4 /* UserSettingsViewController.swift */,
 				8EE7743A24577F71006CF0B0 /* MovieDetailViewController.swift */,
 				8E17878824565DB600357DC9 /* HomePageCollectionViewController.swift */,
@@ -149,6 +148,15 @@
 				8E885E312453CBD20026936D /* AppDelegate.swift */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		8EB366B7245C5199003709FD /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+				8E2365892459DDE90032F9EF /* WatchlistViewController.swift */,
+				8E23658D2459E7300032F9EF /* WatchlistTableViewCell.swift */,
+			);
+			path = "New Group";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

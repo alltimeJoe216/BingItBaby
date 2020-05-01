@@ -14,17 +14,7 @@ protocol AddMovieToWatchList {
 
 class MovieDetailViewController: UIViewController {
     
-    var movie: Movie? {
-        didSet {
-            if let _ = view {
-                updateViews()
-            }
-        }
-    }
-//    let homePageController = HomePageController()
-    var delegate: AddMovieToWatchList?
-//    var delegate2: AddMovieToWatchList?
-    
+    // Outlets
     @IBOutlet weak var behindImageView: UIView!
     @IBOutlet weak var movieDetailName: UILabel!
     @IBOutlet weak var movieDetailImage: UIImageView!
@@ -32,8 +22,16 @@ class MovieDetailViewController: UIViewController {
     @IBOutlet weak var synopsisTextView: UITextView!
     @IBOutlet weak var addToWatchlistButton: UIButton!
     
+    // Computed Property to update the movie being shown
+    var movie: Movie? {
+        didSet {
+            if let _ = view {
+                updateViews()}}}
     
-    
+    // Setting delgate
+    var delegate: AddMovieToWatchList?
+
+    // customizing the image shown on VC
     override func viewDidLoad() {
         super.viewDidLoad()
         behindImageView.layer.masksToBounds = true
@@ -46,8 +44,8 @@ class MovieDetailViewController: UIViewController {
         updateViews()
     }
     
+    // Add Movie Button Tapped:
     @IBAction func addMovieToWatchlistButton(_ sender: UIButton) {
-        
         guard let movie = movie else { return }
         
         let movieName = movie.name
@@ -56,10 +54,11 @@ class MovieDetailViewController: UIViewController {
         movieStatus = true
         
         let addedMovie = Movie(name: movieName, image: movieImage, userIsWatching: movieStatus)
-        delegate?.movieWasAdded(addedMovie)
+        delegate?.movieWasAdded(addedMovie) // Calling delegate method
         showAlert()
     }
     
+    // Update views of VC
     private func updateViews() {
         
         guard let movie = movie else { return } 
@@ -75,6 +74,7 @@ class MovieDetailViewController: UIViewController {
         synopsisTextView.text = movie.synopsis
     }
     
+    // Alert method
     private func showAlert() {
         let alert = UIAlertController(title: "Your movie was added!", message: "Tap 'Ok' to continue", preferredStyle: .alert)
         alert.addAction(UIAlertAction(title: "Ok", style: .default) { (UIAlertAction) -> Void in
