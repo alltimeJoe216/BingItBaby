@@ -37,10 +37,12 @@ class MovieDetailViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         behindImageView.layer.masksToBounds = true
-        behindImageView.layer.cornerRadius = behindImageView.bounds.width / 1.8
+        behindImageView.layer.cornerRadius = behindImageView.bounds.width / 2
         behindImageView.backgroundColor = .purple
         movieDetailImage.layer.masksToBounds = true
-        movieDetailImage.layer.cornerRadius = movieDetailImage.bounds.width / 1.8
+        movieDetailImage.layer.borderWidth = 2
+        movieDetailImage.layer.borderColor = #colorLiteral(red: 0.8175143481, green: 0.3119687745, blue: 0.8673537825, alpha: 1)
+        movieDetailImage.layer.cornerRadius = movieDetailImage.bounds.width / 2
         updateViews()
     }
     

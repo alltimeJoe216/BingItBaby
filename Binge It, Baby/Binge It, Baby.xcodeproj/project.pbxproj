@@ -19,6 +19,8 @@
 		8E885E3B2453CBD70026936D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8E885E3A2453CBD70026936D /* Assets.xcassets */; };
 		8E885E3E2453CBD80026936D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8E885E3C2453CBD80026936D /* LaunchScreen.storyboard */; };
 		8E885E4C2453CCFF0026936D /* MovieShowModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E885E4B2453CCFF0026936D /* MovieShowModel.swift */; };
+		8EB366B4245BAF5E003709FD /* CarouselViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EB366B3245BAF5D003709FD /* CarouselViewCell.swift */; };
+		8EB366B6245BB267003709FD /* CarouselViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EB366B5245BB266003709FD /* CarouselViewController.swift */; };
 		8EC1E0C1245A4DCA00FCEE9D /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EC1E0C0245A4DCA00FCEE9D /* TabBarViewController.swift */; };
 		8EC1E0C3245B190900FCEE9D /* HeaderCollectionReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EC1E0C2245B190900FCEE9D /* HeaderCollectionReusableView.swift */; };
 		8EE7743B24577F71006CF0B0 /* MovieDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EE7743A24577F71006CF0B0 /* MovieDetailViewController.swift */; };
@@ -40,6 +42,8 @@
 		8E885E3D2453CBD80026936D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8E885E3F2453CBD80026936D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8E885E4B2453CCFF0026936D /* MovieShowModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieShowModel.swift; sourceTree = "<group>"; };
+		8EB366B3245BAF5D003709FD /* CarouselViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CarouselViewCell.swift; path = "Binge It, Baby/Storyboards/CarouselViewCell.swift"; sourceTree = SOURCE_ROOT; };
+		8EB366B5245BB266003709FD /* CarouselViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CarouselViewController.swift; path = "Binge It, Baby/Storyboards/CarouselViewController.swift"; sourceTree = SOURCE_ROOT; };
 		8EC1E0C0245A4DCA00FCEE9D /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = SOURCE_ROOT; };
 		8EC1E0C2245B190900FCEE9D /* HeaderCollectionReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = HeaderCollectionReusableView.swift; path = "Binge It, Baby/Storyboards/HeaderCollectionReusableView.swift"; sourceTree = SOURCE_ROOT; };
 		8EE7743A24577F71006CF0B0 /* MovieDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MovieDetailViewController.swift; path = "Binge It, Baby/Storyboards/MovieDetailViewController.swift"; sourceTree = SOURCE_ROOT; };
@@ -106,6 +110,7 @@
 		8E885E472453CC1B0026936D /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				8EB366B3245BAF5D003709FD /* CarouselViewCell.swift */,
 				8EC1E0C2245B190900FCEE9D /* HeaderCollectionReusableView.swift */,
 				8E23658D2459E7300032F9EF /* WatchlistTableViewCell.swift */,
 				8E17878A24565F1500357DC9 /* HomePageCollectionViewCell.swift */,
@@ -116,6 +121,7 @@
 		8E885E482453CC310026936D /* Viewcontrollers */ = {
 			isa = PBXGroup;
 			children = (
+				8EB366B5245BB266003709FD /* CarouselViewController.swift */,
 				8EC1E0C0245A4DCA00FCEE9D /* TabBarViewController.swift */,
 				8E2365892459DDE90032F9EF /* WatchlistViewController.swift */,
 				8E661A0324589A6B00A04EA4 /* UserSettingsViewController.swift */,
@@ -224,7 +230,9 @@
 				8EC1E0C3245B190900FCEE9D /* HeaderCollectionReusableView.swift in Sources */,
 				8E885E342453CBD20026936D /* SceneDelegate.swift in Sources */,
 				8E17878924565DB600357DC9 /* HomePageCollectionViewController.swift in Sources */,
+				8EB366B4245BAF5E003709FD /* CarouselViewCell.swift in Sources */,
 				8E23658A2459DDE90032F9EF /* WatchlistViewController.swift in Sources */,
+				8EB366B6245BB267003709FD /* CarouselViewController.swift in Sources */,
 				8E661A0424589A6B00A04EA4 /* UserSettingsViewController.swift in Sources */,
 				8EE7743D24578057006CF0B0 /* SettingsKeys.swift in Sources */,
 				8E885E4C2453CCFF0026936D /* MovieShowModel.swift in Sources */,

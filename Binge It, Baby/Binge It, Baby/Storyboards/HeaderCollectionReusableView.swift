@@ -17,5 +17,3 @@ class HeaderCollectionReusableView: UICollectionReusableView {
     @IBOutlet weak var headerViewLabel: UILabel!
 }
 
-//extension HeaderCollectionReusableView: UICollectionViewDataSource {
-//}

@@ -83,12 +83,10 @@ class HomePageCollectionViewController: UICollectionViewController {
             cell.layer.shadowColor = UIColor.purple.cgColor
             cell.layer.isOpaque = true
             cell.layer.shadowOffset = CGSize(width: 0, height: 0.0)
-            cell.layer.shadowOffset = CGSize(width: 100, height: 50)
             cell.layer.shadowRadius = 10.0
             cell.layer.shadowOpacity = 1.0
             cell.layer.masksToBounds = true
-            cell.layer.shadowPath = UIBezierPath(roundedRect: cell.bounds,
-                                                 cornerRadius: cell.contentView.layer.cornerRadius).cgPath
+
             return cell
     }
     

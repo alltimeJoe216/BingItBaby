@@ -9,9 +9,7 @@
 import UIKit
 
 class WatchlistViewController: UIViewController {
-    
 
-    
     // ** TableView Outlet
     @IBOutlet weak var movieTableView: UITableView!
 
@@ -27,7 +25,6 @@ class WatchlistViewController: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         
         super.viewWillAppear(animated)
-
         movieTableView.reloadData()
         
     }
@@ -54,7 +51,8 @@ extension WatchlistViewController: UITableViewDataSource, UITableViewDelegate {
     
     func numberOfSections(in tableView: UITableView) -> Int {
         return 1
-    }
+   }
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return homePageController?.movieAddedList.count ?? 0
     }
